@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cinzel', serif;
+
+}
+
+header {
+    position: sticky;
+    max-width: 100vw;
+    top: 0;
+    border: 1px solid white;
+    z-index: 6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    max-width: 100vw;
+    background-color: rgb(8, 8, 8);
+    z-index: 6;
+}
+
+#click {
+    display: none;
+}
+
+.menu-btn i {
+    display: none;
+    padding: 0 20px;
+    z-index: 7;
+}
+
+.navlist1 {
+    display: flex;
+    list-style: none;
+    padding: 0px 15px;
+    z-index: 6;
+}
+
+.l1 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    z-index: 6;
+    padding: 0px 10px 20px 20px;
+    transition: all 0.2s ease;
+
+}
+
+nav ul li a:hover{
+    color: black;
+    background: white;
+    padding: 0px 5px 0px 5px;
+    border-color: 1px solid black;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    color: white;
+    padding: 0px 20px;
+    font-size: 30px;
+}
+
+@media (max-width: 940px) {
+
+    .navlist1 {
+        position: fixed;
+        display: block;
+        text-align: center;
+        left: 0%;
+        top: -110%;
+        background: rgba(5, 5, 5, 0.979);
+        height: 60vh;
+        width: 100vw;
+        transition: all 0.1s ease-in-out;
+        z-index: 5;
+    }
+
+    nav .menu-btn i {
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+        z-index: 7;
+    }
+
+    #click:checked~ul {
+        top: 11vh;
+    }
+
+    nav ul li {
+        padding: 30px 50px;
+    }
+
+    .l1 {
+        font-size: 30px;
+    }
+}
+
+.img {
+    height: 70vh;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url("images\fll.jpg.jpeg");
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: top 45% left 40%;
+}
+
+.content {
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h2 {
+    color: rgb(240, 230, 230);
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 600px;
+}
+
+.content p {
+    color: rgb(240, 230, 230);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.overlay {
+    width: 100%;
+    height: 70vh;
+    background-color: #0a0a0ab4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-content {
+    background: black;
+    max-width: 100vw;
+    color: white;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.main-content h2 {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.main-content p {
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.main-contents {
+    background: black;
+    max-width: 100vw;
+    color: white;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.main-contents h2 {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.main-contents p {
+    font-size: 17px;
+    padding-left: 20px;
+}
+.imag {
+    height: 70vh;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url("images\Lll.jpg");
+    background-size: cover;
+    position: relative;
+    background-attachment: scroll;
+    background-position: top 30% left 35%;
+}
+
+.conttent {
+    z-index: 2;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conttent h2 {
+    color: rgb(240, 230, 230);
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 600px;
+}
+
+.conttent p {
+    color: rgb(240, 230, 230);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.overllay {
+    width: 100%;
+    height: 70vh;
+    background-color: #0a0a0ab4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    max-width: 100vw;
+    ;
+    background: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 1px solid white;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    max-width: 100vw;
+    background: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 5px 0px;
+
+}

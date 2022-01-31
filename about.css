@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cinzel', serif;
+
+}
+
+header {
+    position: sticky;
+    max-width: 100vw;
+    top: 0;
+    border: 1px solid white;
+    z-index: 6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    max-width: 100vw;
+    border: 2px solid white;
+    background-color: rgb(8, 8, 8);
+    z-index: 6;
+}
+
+#click {
+    display: none;
+}
+
+.menu-btn i {
+    display: none;
+    padding: 0 20px;
+    z-index: 7;
+}
+
+.navlist1 {
+    display: flex;
+    list-style: none;
+    padding: 0px 15px;
+    z-index: 6;
+}
+
+.l1 {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    z-index: 6;
+    padding: 0px 10px 20px 20px;
+    transition: all 0.2s ease;
+
+}
+
+nav ul li a:hover{
+    color: black;
+    background: white;
+    padding: 0px 5px 0px 5px;
+    border-color: 1px solid black;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+    font-size: 30px;
+}
+
+@media (max-width: 1060px) {
+
+    .navlist1 {
+        position: fixed;
+        display: block;
+        text-align: center;
+        left: 0%;
+        top: -110%;
+        background: rgba(5, 5, 5, 0.979);
+        height: 60vh;
+        width: 100vw;
+        transition: all 0.1s ease-in-out;
+        z-index: 5;
+    }
+
+    nav .menu-btn i {
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+        z-index: 7;
+    }
+
+    #click:checked~ul {
+        top: 11vh;
+    }
+
+    nav ul li {
+        padding: 30px 50px;
+    }
+
+    .l1 {
+        font-size: 30px;
+    }
+}
+.edit{
+    width: 100vw;
+}
