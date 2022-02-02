@@ -294,11 +294,11 @@ footer h2 {
         font-size: 30px;
     }
     .main-content h2{
-        font-size: 4vw;
+        font-size: 5vw;
        padding-left: 5px;
     }
     .main-contents h2{
-        font-size: 4vw;
+        font-size: 5vw;
        padding-left: 5px;
     }
     .main-content p {
@@ -310,7 +310,6 @@ footer h2 {
         padding-left: 25px;
     }
     .content h2 {
-        /* color: rgb(240, 230, 230); */
         color:white;
         text-align: center;
         font-size: 8vw;

@@ -50,12 +50,3 @@ tl.fromTo(hero, 1, { height: '0%' }, { height: '90vh', ease: Power2.easeInOut })
     .fromTo(navlist, 1, { opacity: 0, x: '-300%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
     .fromTo(content, 1, { opacity: 0}, { opacity: 1, ease: Power2.easeInOut }, "-=1")
     .fromTo(overlay, 1, { opacity: 0, x: '-300%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1.2");
-
-
-
-
-
-
-
-
-
