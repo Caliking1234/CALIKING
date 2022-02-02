@@ -27,7 +27,6 @@ nav {
 
 .navlist {
     display: flex;
-    flex-direction: column;
     list-style: none;
     padding: 0px 15px;
     z-index: 6;
@@ -46,6 +45,7 @@ nav {
 nav ul li a:hover{
     color: white;
     border: 1px solid white;
+    border-radius: 5px;
     padding: 0px 5px 0px 5px;
     font-size: 25px;
     font-weight: bolder;
@@ -76,6 +76,7 @@ nav ul li a:hover{
         position: fixed;
         display: block;
         text-align: center;
+        flex-direction: column;
         background: rgb(0, 0, 0);
         top:10%;
         height: 100vh;
