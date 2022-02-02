@@ -68,14 +68,14 @@ nav ul li a:hover{
 }
 
 .img {
-    height: 90vh;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-image: url("fll.jpg.jpeg");
     background-size: cover;
     position: relative;
     background-attachment: scroll;
-    background-position: top 45% left 40%;
+    background-position: top 45% left 20%;
 }
 
 .content {
@@ -88,30 +88,33 @@ nav ul li a:hover{
 }
 
 .content h2 {
-    color: rgb(240, 230, 230);
+    /* color: rgb(240, 230, 230); */
+    color:white;
     text-align: center;
-    font-size: 6vw;
+    font-size: 60px;
     letter-spacing: 2px;
     font-weight: 600px;
 }
 
 .content p {
     color: rgb(240, 230, 230);
+    color:white;
+
     text-align: center;
-    font-size: 2vw;
+    font-size: 18px;
     letter-spacing: 2px;
     font-weight: bolder;
 }
 
-.overlay {
+ .overlay {
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background-color: #0a0a0ab4;
     position: absolute;
-    top: 0;
+    top: calc( 10vh + 2px );
     left: 0;
     z-index: 1;
-}
+} 
 
 .main-content {
     background: black;
@@ -290,6 +293,14 @@ footer h2 {
     .l1 {
         font-size: 30px;
     }
+    .main-content h2{
+        font-size: 4vw;
+       padding-left: 5px;
+    }
+    .main-contents h2{
+        font-size: 4vw;
+       padding-left: 5px;
+    }
     .main-content p {
         font-size: 2vw;
         padding-left: 25px;
@@ -297,5 +308,23 @@ footer h2 {
     .main-contents p {
         font-size: 2vw;
         padding-left: 25px;
+    }
+    .content h2 {
+        /* color: rgb(240, 230, 230); */
+        color:white;
+        text-align: center;
+        font-size: 8vw;
+        letter-spacing: 2px;
+        font-weight: 600px;
+    }
+    
+    .content p {
+        color: rgb(240, 230, 230);
+        color:white;
+    
+        text-align: center;
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+        font-weight: bolder;
     }
 }
