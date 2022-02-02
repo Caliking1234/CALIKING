@@ -154,16 +154,15 @@ nav ul li a:hover{
     padding-left: 25px;
 }
 .imag {
-    /* height: 70vh; */
+    height: 70vh; 
     max-width: 100vw;
     display: flex;
-    object-fit: cover;
-    /* background-repeat: no-repeat;
-    background-image: url("Lll.jpg"); */
-    /* background-size: cover;
+     background-repeat: no-repeat;
+    background-image: url("Lll.jpg");
+     background-size: cover;
     position: relative;
     background-attachment: scroll;
-    background-position: top 30% left 35%; */
+    background-position: top 30% left 35%;
 }
 
 .overllay {
