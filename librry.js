@@ -36,8 +36,12 @@ function incre() {
 }
 setInterval(incre, 3000);
 
-const tl = new TimelineMax();
 
-tl.fromTo(logo, 1, { opacity: 0, x: '-100%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
-    .fromTo(ham, 1, { opacity: 0, x: '-100%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
-    .fromTo(navlist, 1, { opacity: 0, x: '-300%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1");
+const tll = gsap.timeline({defaults:{ease:'power1.out'}});
+
+tll.to(".text",{y:"0%", duration: 1,stagger:0.25});
+tll.to(".slider",{y:"-150%",duration:1.5,delay:0.5});
+tll.to(".intro",{y:"-150%",duration:1},"-=1.25");
+tll.fromTo("#logo",{opacity:0},{opacity:1,duration:.75});
+tll.fromTo(".hamburger",{opacity:0},{opacity:1,duration:.75},"-=1");
+tll.fromTo(".navlist",{opacity:0},{opacity:1,duration:.75},"-=1");
