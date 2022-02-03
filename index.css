@@ -248,13 +248,7 @@ footer h2 {
     .lp{
         height: 2.5vh;;
     }
-    .intro-text{
-        color: white;
-        font-size: 5vw;
-    }
-    h2 .text{
-        font-size: 3vw;
-    }
+    
 }
 .intro{
     z-index: 11;
@@ -292,4 +286,13 @@ h2 .text{
 .hide span{
     transform: translateY(100%);
     display: inline-block;
+}
+@media (max-width: 840px){
+    .intro-text{
+        color: white;
+        font-size: 5vw;
+    }
+    h2 .text{
+        font-size: 3vw;
+    }
 }
