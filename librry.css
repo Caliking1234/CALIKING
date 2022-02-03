@@ -65,7 +65,7 @@ h2 .text{
     transform: translateY(100%);
     display: inline-block;
 }
-@media (max-width:960px) {
+@media (max-width:860px) {
     .intro-text{
         color: white;
         font-size: 5vw;
