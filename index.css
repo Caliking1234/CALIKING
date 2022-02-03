@@ -249,3 +249,37 @@ footer h2 {
         height: 2.5vh;;
     }
 }
+.intro{
+    z-index: 11;
+    position: fixed;
+    background-color: black;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    z-index: 11;
+    position: fixed;
+    background-color: rgb(110, 110, 110);
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color: white;
+    font-size: 2.5rem;
+}
+.hide{
+    background-color: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
