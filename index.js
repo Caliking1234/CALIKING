@@ -51,18 +51,3 @@ tll.fromTo(".navlist",{opacity:0},{opacity:1,duration:.75},"-=1");
 tll.fromTo(".img",{height:"0%"},{height:"90vh",duration:.75},"-=1");
 tll.fromTo(".overlay",{height:"0%"},{height:"90vh",duration:.75},"-=1");
 tll.fromTo(".content",{opacity:0},{opacity:1,duration:.75},"-=1");
-
-
-
-
-
-
-// const tl = new TimelineMax();
-
-// tl.fromTo(hero, 1, { height: '0%' }, { height: '90vh', ease: Power2.easeInOut })
-//     .fromTo(hero, 1.2, { width: '0%' }, { width: '100%', ease: Power2.easeInOut })
-//     .fromTo(logo, 1, { opacity: 0, x: '-100%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
-//     .fromTo(ham, 1, { opacity: 0, x: '-100%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
-//     .fromTo(navlist, 1, { opacity: 0, x: '-300%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1")
-//     .fromTo(content, 1, { opacity: 0}, { opacity: 1, ease: Power2.easeInOut }, "-=1")
-//     .fromTo(overlay, 1, { opacity: 0, x: '-300%' }, { opacity: 1, x: '0%', ease: Power2.easeInOut }, "-=1.2");
