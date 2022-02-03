@@ -248,6 +248,13 @@ footer h2 {
     .lp{
         height: 2.5vh;;
     }
+    .intro-text{
+        color: white;
+        font-size: 5vw;
+    }
+    h2 .text{
+        font-size: 3vw;
+    }
 }
 .intro{
     z-index: 11;
@@ -273,7 +280,10 @@ footer h2 {
 }
 .intro-text{
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
+}
+h2 .text{
+    font-size: 2rem;
 }
 .hide{
     background-color: black;

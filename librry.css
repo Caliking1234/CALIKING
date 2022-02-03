@@ -52,10 +52,10 @@ main{
 }
 .intro-text{
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h2 .text{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .hide{
     background-color: black;
@@ -64,4 +64,13 @@ h2 .text{
 .hide span{
     transform: translateY(100%);
     display: inline-block;
+}
+@media (max-width:960px) {
+    .intro-text{
+        color: white;
+        font-size: 5vw;
+    }
+    h2 .text{
+        font-size: 3vw;
+    }
 }
