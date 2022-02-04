@@ -29,6 +29,7 @@ nav {
     display: flex;
     list-style: none;
     padding: 0px 15px;
+    background-attachment: scroll;
     z-index: 6;
 }
 
