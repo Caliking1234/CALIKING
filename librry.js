@@ -51,6 +51,7 @@ var myvid = document.getElementById('myvid');
 
 function stopvid(){
 videoplayer.style.display="none";
+myvid.src='#';
 
 }
 function playvid(file){
