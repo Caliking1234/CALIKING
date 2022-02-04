@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
-    </style>
+</style>
 <link rel="stylesheet" href="nav.css">
 <link rel="stylesheet" href="librry.css">
 
@@ -25,7 +26,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            
+
 
             <ul class="navlist">
                 <li><a class="l1" href="index.html">Home</a></li>
@@ -50,15 +51,92 @@
             </div>
         </div>
         <div class="slider"></div>
+        <div class="library">
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img1" src="imgs\img1.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid6.mp4')">
+                </div>
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img2" src="imgs\img2.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid1.mp4')">
+                </div>
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img3" src="imgs\img3.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid2.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img4" src="imgs\img4.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid10.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img5" src="imgs\img5.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid4.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img6" src="imgs\img6.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid5.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img7" src="imgs\img7.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid3.mp4')">
+                </div>
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img8" src="imgs\img8.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid8.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img9" src="imgs\img9.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid7.mp4')">
+                </div>
+
+            </div>
+            <div class="vid">
+                <div class="col">
+                    <img class="cool-img10" src="imgs\img10.jpeg" alt="">
+                    <img class="play-btn" src="imgs\play-round.svg" alt="" onclick="playvid('videos/vid9.mp4')">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="video-player" id="videoplayer">
+            <video src="videos\vid6.mp4" width="100%" controls autoplay type="video/mp4" id="myvid"></video>
+            <img class="close-btn" src="imgs\close-button.svg" alt="" onclick="stopvid()">
+        </div>
     </main>
     <footer>
         <h3 class="lp">no talent exists, it is mere obsession</h3>
         <h2>copyright &copy all rights reserved</h2>
     </footer>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="librry.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="librry.js"></script>
 
 
 </body>
+
 </html>

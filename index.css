@@ -71,7 +71,7 @@ nav ul li a:hover{
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-image: url("fll.jpg.jpeg");
+    background-image: url("imgs/abc.jpeg");
     background-size: cover;
     position: relative;
     background-attachment: scroll;
@@ -158,7 +158,7 @@ nav ul li a:hover{
     max-width: 100vw;
     display: flex;
      background-repeat: no-repeat;
-    background-image: url("Lll.jpg");
+    background-image: url("imgs/Lll.jpg");
      background-size: cover;
     position: relative;
     background-attachment: scroll;

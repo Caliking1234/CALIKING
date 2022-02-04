@@ -45,3 +45,15 @@ tll.to(".intro",{y:"-150%",duration:1},"-=1.25");
 tll.fromTo("#logo",{opacity:0},{opacity:1,duration:.75});
 tll.fromTo(".hamburger",{opacity:0},{opacity:1,duration:.75},"-=1");
 tll.fromTo(".navlist",{opacity:0},{opacity:1,duration:.75},"-=1");
+
+var videoplayer = document.getElementById('videoplayer');
+var myvid = document.getElementById('myvid');
+
+function stopvid(){
+videoplayer.style.display="none";
+
+}
+function playvid(file){
+    myvid.src=file;
+    videoplayer.style.display='block';
+}
