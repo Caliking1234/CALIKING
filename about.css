@@ -1,113 +1,105 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Cinzel', serif;
-
+nav{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
 }
-
-header {
-    position: sticky;
-    max-width: 100vw;
-    top: 0;
+.foot{
     border: 1px solid white;
-    z-index: 6;
-}
-
-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
+    justify-content: space-evenly;
+    height: 5vh;
     max-width: 100vw;
-    border: 2px solid white;
-    background-color: rgb(8, 8, 8);
-    z-index: 6;
-}
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -20%, #000000 54%);
 
-#click {
-    display: none;
-}
-
-.menu-btn i {
-    display: none;
-    padding: 0 20px;
-    z-index: 7;
-}
-
-.navlist1 {
-    display: flex;
-    list-style: none;
-    padding: 0px 15px;
-    z-index: 6;
-}
-
-.l1 {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    letter-spacing: 4px;
-    font-weight: bolder;
-    z-index: 6;
-    padding: 0px 10px 20px 20px;
-    transition: all 0.2s ease;
 
 }
-
-nav ul li a:hover{
-    color: black;
-    background: white;
-    padding: 0px 5px 0px 5px;
-    border-color: 1px solid black;
-    border-radius: 5px;
-    font-weight: lighter;
-}
-
-.heading1 {
+footer h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px;
-    background-color: black;
+    height: 5vh;
+    max-width: 100vw;
+    /* background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -20%, #000000 54%); */
     color: white;
-    padding: 0px 20px;
-    font-size: 30px;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
 }
 
-@media (max-width: 1060px) {
+.lp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    max-width: 100vw;
+    /* background: black; */
+    color: white;
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    padding: 5px 0px;
+    /* text-shadow: 2px 2px rgb(228, 226, 226); */
+    transition: all 0.3 ease;
 
-    .navlist1 {
-        position: fixed;
-        display: block;
-        text-align: center;
-        left: 0%;
-        top: -110%;
-        background: rgba(5, 5, 5, 0.979);
-        height: 60vh;
-        width: 100vw;
-        transition: all 0.1s ease-in-out;
-        z-index: 5;
-    }
+}
+main{
+    /* height: 150vh; */
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 -20%, #000000 44%);
 
-    nav .menu-btn i {
+}
+.intro{
+    z-index: 11;
+    position: fixed;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    z-index: 11;
+    position: fixed;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color: white;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* font-size: 3rem; */
+}
+h2 .text{
+    font-size: 2rem;
+}
+.hide{
+    /* background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%); */
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+@media (max-width:860px) {
+    .intro-text{
         color: white;
-        font-size: 25px;
-        cursor: pointer;
-        display: block;
-        z-index: 7;
+        font-size: 5vw;
     }
-
-    #click:checked~ul {
-        top: 11vh;
+    h2 .text{
+        font-size: 3vw;
     }
-
-    nav ul li {
-        padding: 30px 50px;
-    }
-
-    .l1 {
-        font-size: 30px;
-    }
-}
-.edit{
-    width: 100vw;
 }
