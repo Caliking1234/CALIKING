@@ -42,7 +42,8 @@ ham.addEventListener('click', () => {
 
 const tll = gsap.timeline({defaults:{ease:'power1.out'}});
 
-tll.to(".text",{y:"0%", duration: 1,stagger:0.25});
+tll.fromTo(".text",{opacity:0},{opacity:1,duration:1});
+tll.to(".text",{y:"0%", duration: 1,stagger:0.25},"-=1");
 tll.to(".slider",{y:"-150%",duration:1.5,delay:0.5});
 tll.to(".intro",{y:"-150%",duration:1},"-=1.25");
 tll.fromTo("#logo",{opacity:0},{opacity:1,duration:.75});

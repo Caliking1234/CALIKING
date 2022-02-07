@@ -285,18 +285,19 @@ footer h2 {
 .intro-text{
     color: white;
     font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 h2 .text{
     font-size: 2rem;
 }
 .hide{
-    background-color: #2d3436;
-    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
+    /* background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%); */
     overflow: hidden;
-    position: absolute;
-    left: 15%;
-    /* top: 50%; */
-
 }
 .hide span{
     transform: translateY(100%);

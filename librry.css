@@ -66,17 +66,19 @@ background-image: linear-gradient(315deg, #2d3436 -20%, #000000 44%);
 }
 .intro-text{
     color: white;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     /* font-size: 3rem; */
 }
 h2 .text{
     font-size: 2rem;
 }
 .hide{
-    background-color: #2d3436;
-    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
+    /* background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%); */
     overflow: hidden;
-    position: absolute;
-    left:-10%;
 }
 .hide span{
     transform: translateY(100%);
