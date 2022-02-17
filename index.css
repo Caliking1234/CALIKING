@@ -183,8 +183,9 @@ background-image: linear-gradient(315deg, #2d3436 -10%, #000000 54%);
 .foot{
     border: 1px solid white;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    height: 5vh;
+    /* height: 5vh; */
     max-width: 100vw;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 -20%, #000000 54%);

@@ -5,8 +5,9 @@ nav{
 .foot{
     border: 1px solid white;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    height: 5vh;
+    /* height: 5vh; */
     max-width: 100vw;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 -20%, #000000 54%);
@@ -199,11 +200,12 @@ h2 .text{
 
 .video-player{
     /* box-shadow: 5px 10px 10px black; */
-    width: 50%;
+    width: 22%;
     position: fixed;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-20%);
+    /* background-attachment: scroll; */
+    transform: translate(-50%,-50%);
     display: none;
 }
 video:focus{
