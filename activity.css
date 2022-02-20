@@ -6,8 +6,8 @@ main{
     min-height: 80vh;
 }
 .calc{
-    height: 60vh;
-    width:60vw;
+    height: 70vh;
+    width:80vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,6 +49,18 @@ main{
     box-shadow: 5px 10px 10px #2d3436;
 
 }
+.ans{
+    width: 30vw;
+    height: 18px;
+    background-color: #7d949b;
+    color: black;
+    padding: 3px;
+    margin: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #2d3436;
+}
 .btn{
     position: absolute;
     top: 80%;
@@ -70,4 +82,72 @@ main{
     border-radius: 5px;
     box-shadow: 5px 10px 10px #2d3436;
     cursor: pointer;
+}
+@media (max-width: 680px) {
+    #btn1{
+        width: 12vw;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 10px 10px #2d3436;
+        font-size: 1.75vw;
+        cursor: pointer;
+    }
+    #btn2{
+        width: 12vw;
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 10px 10px #2d3436;
+        font-size: 1.75vw;
+        cursor: pointer;
+    }
+}
+.gauge{
+    width: 100%;
+    max-width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%,-50%);
+}
+.gauge-body{
+    width: 100%;
+    height:0;
+    padding-bottom: 50%;
+    /* background: red; */
+    position: relative;
+    border: 1px solid black;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+}
+.gauge-fill{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background-color: cyan;
+    transition: all 0.3 ease-in-out;
+    transform-origin: center top;
+    transform: rotate(0turn);
+    /* transition: transform 0.5 ease-in-out; */
+}
+
+.gauge-cover{
+    width: 75%;
+    height: 150%;
+    position: absolute;
+    background-color: #274046;
+    border-radius: 50%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
 }

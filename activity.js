@@ -34,7 +34,7 @@ function incre() {
     }
     looop();
 }
-setInterval(incre, 3000);
+setInterval(incre, 2500);
 
 
 const tll = gsap.timeline({defaults:{ease:'power1.out'}});
@@ -46,3 +46,55 @@ tll.to(".intro",{y:"-150%",duration:1},"-=1.25");
 tll.fromTo("#logo",{opacity:0},{opacity:1,duration:.75});
 tll.fromTo(".hamburger",{opacity:0},{opacity:1,duration:.75},"-=1");
 tll.fromTo(".navlist",{opacity:0},{opacity:1,duration:.75},"-=1");
+
+const gaugeEle = document.querySelector('.gauge');
+
+
+function rotat(gauge ,value){
+
+    if(value<0 || value>1)
+    {
+        return;
+    }
+    val=value/2
+    gauge = document.querySelector('.gauge-fill').style.transform = "rotate(${val}turn)";
+    value=Math.round(value*35);
+    gauge = document.querySelector('.gauge-cover').textContent = value;
+
+}
+function fn1(){
+    var var1 = document.getElementById('weight').value;
+    var var2 = document.getElementById('height').value;
+    console.log(var1);
+    console.log(var2);
+    var bm = var1*10000/(var2*var2);
+    var vl = bm/35;
+    rotat(gaugeEle,vl);
+    console.log(bm);
+    console.log((vl));
+
+    if(bm<20){
+      document.querySelector('.ans').innerHTML = "underweight : need  to Bulk up";
+    }
+    if(bm>=20 && bm<25){
+      document.querySelector('.ans').innerHTML = "normal weight : keep going";
+    }
+    if(bm>=25 && bm <30){
+      document.querySelector('.ans').innerHTML = "overweight : cut down a bit";
+    }
+    if(bm>=30){
+      document.querySelector('.ans').innerHTML = "obese : focus on your health";
+
+    }
+
+}
+
+function fn2(){
+    var var1 = document.getElementById('weight');
+    var var2 = document.getElementById('height');
+    document.querySelector('.ans').innerHTML = "calculate your bmi.....";
+    var1.value='';
+    var2.value='';
+}
+
+
