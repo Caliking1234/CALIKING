@@ -57,10 +57,9 @@ function rotat(gauge ,value){
         return;
     }
     val=value/2
-    gauge = document.querySelector('.gauge-fill').style.transform = "rotate(${val}turn)";
-    value=Math.round(value*35);
-    gauge = document.querySelector('.gauge-cover').textContent = value;
-
+    gauge.querySelector('.gauge-fill').style.transform = "rotate("+val+"turn)";
+    value=(value*35);
+    gauge.querySelector('.gauge-cover').textContent = value;
 }
 function fn1(){
     var var1 = document.getElementById('weight').value;
