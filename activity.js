@@ -68,23 +68,28 @@ function fn1(){
     console.log(var2);
     var bm = var1*10000/(var2*var2);
     var vl = bm/35;
-    rotat(gaugeEle,vl);
-    console.log(bm);
-    console.log((vl));
-
+    // console.log(bm);
+    // console.log((vl));
+    
     if(bm<20){
-      document.querySelector('.ans').innerHTML = "underweight : need  to Bulk up";
+        document.querySelector('.ans').innerHTML = "underweight : need  to Bulk up";
+        document.querySelector('.gauge-fill').style.background = 'yellow';
     }
     if(bm>=20 && bm<25){
       document.querySelector('.ans').innerHTML = "normal weight : keep going";
+      document.querySelector('.gauge-fill').style.background = 'green';
+
     }
     if(bm>=25 && bm <30){
       document.querySelector('.ans').innerHTML = "overweight : cut down a bit";
+      document.querySelector('.gauge-fill').style.background = '#042803;';
     }
     if(bm>=30){
-      document.querySelector('.ans').innerHTML = "obese : focus on your health";
-
+        document.querySelector('.ans').innerHTML = "obese : focus on your health";
+        document.querySelector('.gauge-fill').style.background = 'red';
+        
     }
+    rotat(gaugeEle,vl);
 
 }
 
