@@ -59,7 +59,7 @@ function rotat(gauge ,value){
     val=value/2
     gauge.querySelector('.gauge-fill').style.transform = "rotate("+val+"turn)";
     value=(value*35);
-    gauge.querySelector('.gauge-cover').textContent = value;
+    gauge.querySelector('.gauge-cover').textContent = value.toFixed(2);
 }
 function fn1(){
     var var1 = document.getElementById('weight').value;
