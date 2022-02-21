@@ -119,6 +119,8 @@ nav ul li a:hover{
         top:50%;
         right: 5%;
         transform: translate(-5%,-50%);
+        /* box-shadow: 5px 10px 10px #2d3436; */
+
     }
 
     nav ul li {
