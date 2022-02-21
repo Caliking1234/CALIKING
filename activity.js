@@ -99,6 +99,10 @@ function fn2(){
     document.querySelector('.ans').innerHTML = "calculate your bmi.....";
     var1.value='';
     var2.value='';
+    gaugeEle.querySelector('.gauge-fill').style.transform = "rotate(0turn)";
+    gaugeEle.querySelector('.gauge-cover').textContent = "";
+
+
 }
 
 
