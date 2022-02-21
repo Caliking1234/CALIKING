@@ -47,14 +47,29 @@ tll.fromTo("#logo",{opacity:0},{opacity:1,duration:.75});
 tll.fromTo(".hamburger",{opacity:0},{opacity:1,duration:.75},"-=1");
 tll.fromTo(".navlist",{opacity:0},{opacity:1,duration:.75},"-=1");
 
+function fn2(){
+    let cle = confirm("Are U Sure ?");
+    if(cle){
+    var var1 = document.getElementById('weight');
+    var var2 = document.getElementById('height');
+    document.querySelector('.ans').innerHTML = "calculate your bmi.....";
+    var1.value='';
+    var2.value='';
+    gaugeEle.querySelector('.gauge-fill').style.transform = "rotate(0turn)";
+    gaugeEle.querySelector('.gauge-cover').textContent = "";
+    }
+}
+
 const gaugeEle = document.querySelector('.gauge');
 
 
 function rotat(gauge ,value){
 
-    if(value<0 || value>1)
+    if(value<=0 || value>1)
     {
-        return;
+        alert("Please Enter Correct Values");
+        fn2();
+        
     }
     val=value/2
     gauge.querySelector('.gauge-fill').style.transform = "rotate("+val+"turn)";
@@ -82,7 +97,7 @@ function fn1(){
     }
     if(bm>=25 && bm <30){
       document.querySelector('.ans').innerHTML = "overweight : cut down a bit";
-      document.querySelector('.gauge-fill').style.background = '#042803;';
+      document.querySelector('.gauge-fill').style.background = '#042803';
     }
     if(bm>=30){
         document.querySelector('.ans').innerHTML = "obese : focus on your health";
@@ -93,16 +108,6 @@ function fn1(){
 
 }
 
-function fn2(){
-    var var1 = document.getElementById('weight');
-    var var2 = document.getElementById('height');
-    document.querySelector('.ans').innerHTML = "calculate your bmi.....";
-    var1.value='';
-    var2.value='';
-    gaugeEle.querySelector('.gauge-fill').style.transform = "rotate(0turn)";
-    gaugeEle.querySelector('.gauge-cover').textContent = "";
 
-
-}
 
 
