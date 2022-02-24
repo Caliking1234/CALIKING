@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 let port = 80;
 
-app.get("/", (req,res)=>{
+app.get("/ki", (req,res)=>{
     res.send("home page");
 })
 
