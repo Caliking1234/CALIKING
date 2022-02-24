@@ -1,0 +1,25 @@
+{
+  "name": "noode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caliking1234/CALIKING.git"
+  },
+  "author": "piyush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caliking1234/CALIKING/issues"
+  },
+  "homepage": "https://github.com/Caliking1234/CALIKING#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
